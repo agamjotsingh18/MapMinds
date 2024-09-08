@@ -144,7 +144,7 @@ const [menuColumn, setMenuColumn] = useState(null);
 
   return (
     <>
-      <TableContainer component={Paper} sx={{ width: "100%", margin: "0 auto", mt: 4 }}>
+      <TableContainer component={Paper} sx={{ width: "100%", margin: "0 auto", mt: 4, }}>
         <Table>
           <TableHead>
             <TableRow>
@@ -227,9 +227,9 @@ const [menuColumn, setMenuColumn] = useState(null);
                     <Typography
                       variant="body2"
                       noWrap={!row.showMore}
-                      sx={{ maxWidth: "calc(100% - 30px)" }}
+                      sx={{ maxWidth: "calc(100% - 30px)", fontSize:"16px" }}
                     >
-                      {row.showMore ? row.data : `${row.data.slice(0, 110)}...`}
+                      {row.showMore ? row.data : `${row.data.slice(0, 100)}...`}
                     </Typography>
                     {row.data.length > 110 && (
                       <IconButton
@@ -248,7 +248,7 @@ const [menuColumn, setMenuColumn] = useState(null);
                           },
                         }}
                       >
-                        <Typography variant="body" sx={{ ml: 1, fontSize: "0.875rem" }}>
+                        <Typography variant="body" sx={{ ml: 1, fontSize: "0.75rem", fontWeight:"bold" }}>
                           {row.showMore ? "SHOW LESS" : "SHOW MORE"}
                         </Typography>
                         {row.showMore ? <KeyboardArrowUpIcon fontSize="small" /> : <KeyboardArrowDownIcon fontSize="small" />}
