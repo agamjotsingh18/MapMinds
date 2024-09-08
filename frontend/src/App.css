@@ -1,0 +1,79 @@
+/* App.css */
+.mind-map-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mind-map-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mind-map-header h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+}
+
+.mind-map-header button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.mind-map-header button:hover {
+  background-color: #3e8e41;
+}
+
+.mind-map-nodes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mind-map-node {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 20px);
+}
+
+.node-header {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.node-header h3 {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+}
+
+.node-content {
+  padding: 20px;
+}
+
+.node-icon {
+  font-size: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.node-icon:hover {
+  color: #3e8e41;
+}
